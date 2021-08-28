@@ -32,6 +32,9 @@ class MiniRouterPage extends HTMLElement {
         }));
         __classPrivateFieldGet(this, _observer).observe(this, { attributes: true });
     }
+    get isVisible() {
+        return this.style.display !== 'none';
+    }
     shownCallback() { }
     hiddenCallback() { }
     disconnectedCallback() {
