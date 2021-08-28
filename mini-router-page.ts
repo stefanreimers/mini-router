@@ -24,6 +24,10 @@ class MiniRouterPage extends HTMLElement {
 
   }
 
+  get isVisible() {
+    return this.style.display !== 'none'
+  }
+
   shownCallback() { }
 
   hiddenCallback() { }
